@@ -27,4 +27,4 @@ models.sequelize.sync()
   .then(() => {
     stockSamples.forEach(element => models.stocks.create(element));
     weightSamples.forEach(element => models.weights.create(element));
-  })
+  }) 

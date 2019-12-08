@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    const document = sequelize.define('document', {
+    const weights = sequelize.define('weights', {
         id: { primaryKey: true, type: DataTypes.INTEGER, autoIncrement: true },
         isDel: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
 
@@ -10,5 +10,5 @@ module.exports = (sequelize, DataTypes) => {
     {
       freezeTableName: true
     });
-  return document;
+  return weights;
 };

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    const document = sequelize.define('document', {
+    const prices = sequelize.define('prices', {
         id: { primaryKey: true, type: DataTypes.INTEGER, autoIncrement: true },
         isDel: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
 
@@ -12,5 +12,5 @@ module.exports = (sequelize, DataTypes) => {
     {
       freezeTableName: true
     });
-  return document;
+  return prices;
 };
