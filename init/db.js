@@ -16,15 +16,7 @@ stockSamples = [
   }
 ]
 
-weightSamples = [
-  {
-    name: "half",
-    description: "가중치를 매 항마다 절반씩 줄임"
-  }
-]
-
 models.sequelize.sync()
   .then(() => {
     stockSamples.forEach(element => models.stocks.create(element));
-    weightSamples.forEach(element => models.weights.create(element));
   }) 

@@ -5,10 +5,10 @@ module.exports = (sequelize, DataTypes) => {
         isDel: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
 
         stockId: DataTypes.INTEGER,
-        weightId: DataTypes.INTEGER,
-        priceId: DataTypes.INTEGER,
-
+        
         epsilon: DataTypes.FLOAT,
+
+        lambda: DataTypes.FLOAT,
         
         lambda1: DataTypes.FLOAT,
         lambda2: DataTypes.FLOAT,

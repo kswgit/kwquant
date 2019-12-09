@@ -5,6 +5,7 @@ module.exports = {
         password: 'kwquant',
 
         dialect: 'sqlite',
+        logging: false,
         pool: {
             max: 5,
             min: 0,

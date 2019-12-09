@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
 
         date: DataTypes.DATE,
         price: DataTypes.INTEGER,
+
     },
     {
       freezeTableName: true
